@@ -1,0 +1,121 @@
+.choose{
+    padding: 100px 0 150px;
+}
+
+.tabs{
+    margin-bottom: 70px;
+}
+
+.tabs-btn{
+    padding: 0 150px 100px;
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+}
+
+.tabs-btn-item{
+    font-size: 24px;
+    font-weight: 700;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    color: rgb(21, 21, 21);
+    text-transform: none;
+}
+
+.tabs-btn-item--active{
+    color: #0066FF;
+}
+
+.tabs-contant-item{
+    display: none;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 100px 40px;
+}
+
+.tabs-contant-item.tabs-contant-item--active{
+    display: grid;
+}
+
+.card{
+    text-align: center;
+}
+
+.card-img{
+    display: block;
+    width: 100%;
+}
+
+.card-content{
+    padding: 0 5px;
+    border: 1px solid #0066FF;
+    border-top: 0;
+}
+
+.card-title{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    padding-top: 20px;
+}
+
+.card-text{
+    margin-bottom: 20px;
+}
+
+.card-price{
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.card-link{
+    display: block;
+    color: #0066FF;
+    border: 1px solid #0066FF;
+    border-top: 0;
+}
+
+
+
+
+@media (max-width: 1180px) {
+    .tabs-contant-item {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 1040px) {
+    .tabs-btn{
+        padding: 0 0 50px;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 860px) {
+    .tabs-contant-item {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 650px) {
+    .tabs-contant-item {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .tabs-btn-item{
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 540px) {
+    .tabs-btn{
+        flex-direction: column;
+    }
+    .choose{
+        padding: 50px 0;
+    }
+    .tabs-btn-item{
+        gap: 40px;
+    }
+}
